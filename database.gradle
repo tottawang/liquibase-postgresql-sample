@@ -28,8 +28,7 @@ task startDatabase(type: JavaExec) {
   group = 'database'
   workingDir = projectDir
   main = 'org.h2.tools.Server'
-  // classpath = runtimeClasspath
-	classpath = sourceSets.main.runtimeClasspath
+  classpath = sourceSets.main.runtimeClasspath
 }
 
 task buildSchema(type: JavaExec) {
